@@ -22,10 +22,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="eyh-lA-iJS">
             <objects>
-                <viewController id="ez2-II-kTC" sceneMemberID="viewController">
+                <viewController id="ez2-II-kTC" customClass="Home" customModule="ShotsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2zC-Z2-vt9"/>
                         <viewControllerLayoutGuide type="bottom" id="uCY-FG-P2u"/>
@@ -49,6 +49,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="imageButtonDidPress:" destination="ez2-II-kTC" eventType="touchUpInside" id="BXO-de-b8A"/>
                                                     <segue destination="UMY-ag-csS" kind="modal" modalTransitionStyle="flipHorizontal" id="1Nm-0X-2SI"/>
                                                 </connections>
                                             </button>
@@ -95,6 +96,9 @@
                                                     <color key="titleColor" red="0.2062896475547781" green="0.16187160113003374" blue="0.24931719026180232" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="likeButtonDidPress:" destination="ez2-II-kTC" eventType="touchUpInside" id="hnI-s8-PIM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2T-ET-Eug">
                                                 <rect key="frame" x="140" y="210" width="140" height="58"/>
@@ -104,6 +108,9 @@
                                                     <color key="titleColor" red="0.20628964759999999" green="0.16187160110000001" blue="0.24931719029999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="shareButtonDidPress:" destination="ez2-II-kTC" eventType="touchUpInside" id="TBh-Un-Gte"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.91764705882352937" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,6 +125,9 @@
                                         <state key="normal" image="button-user">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="userButtonDidPress:" destination="ez2-II-kTC" eventType="touchUpInside" id="8DP-at-dt3"/>
+                                        </connections>
                                     </button>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIX-9y-o48">
                                         <rect key="frame" x="189" y="114" width="170" height="141"/>
@@ -213,6 +223,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="5ys-Nr-zOL" id="zZL-5H-Rk1"/>
+                        <outlet property="avatarImageView" destination="EWj-ZO-0pu" id="IZk-G0-NKE"/>
+                        <outlet property="backgroundImageView" destination="edz-NX-9Lz" id="Tg6-Rp-tb4"/>
+                        <outlet property="backgroundMaskView" destination="xrl-lk-hIF" id="dL1-5J-llr"/>
+                        <outlet property="dialogueView" destination="ZrI-4a-4AU" id="UsX-gh-fZI"/>
+                        <outlet property="favouritesLabel" destination="u4m-n6-9e7" id="hQA-oN-wgC"/>
+                        <outlet property="headerView" destination="0Pp-TW-Lqk" id="yDc-QO-EnZ"/>
+                        <outlet property="imageButton" destination="0Jn-GM-U8E" id="X02-RN-FLx"/>
+                        <outlet property="likeButton" destination="Q4e-VP-aga" id="SBn-WA-iOK"/>
+                        <outlet property="popoverView" destination="OIX-9y-o48" id="ZaG-a4-70B"/>
+                        <outlet property="shareButton" destination="T2T-ET-Eug" id="Qwz-og-U1N"/>
+                        <outlet property="shareView" destination="dHi-bp-Wym" id="VHQ-Nn-uDA"/>
+                        <outlet property="titleLabel" destination="kFQ-F3-M2r" id="uzr-HK-vQN"/>
+                        <outlet property="userButton" destination="57q-0r-8kh" id="Ita-Rj-4Nh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydk-KX-p4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
