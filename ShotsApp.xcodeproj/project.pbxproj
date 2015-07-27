@@ -13,6 +13,7 @@
 		BD9E83741B64F4630091AA73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9E83731B64F4630091AA73 /* Images.xcassets */; };
 		BD9E83771B64F4630091AA73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9E83751B64F4630091AA73 /* LaunchScreen.xib */; };
 		BD9E83831B64F4630091AA73 /* ShotsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E83821B64F4630091AA73 /* ShotsAppTests.swift */; };
+		BD9E838D1B6506F50091AA73 /* font in Resources */ = {isa = PBXBuildFile; fileRef = BD9E838C1B6506F50091AA73 /* font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BD9E837C1B64F4630091AA73 /* ShotsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShotsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9E83811B64F4630091AA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD9E83821B64F4630091AA73 /* ShotsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotsAppTests.swift; sourceTree = "<group>"; };
+		BD9E838C1B6506F50091AA73 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = "../../../../Downloads/ShotsApp-Implementing/ShotsApp/font"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		BD9E83691B64F4630091AA73 /* ShotsApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD9E838C1B6506F50091AA73 /* font */,
 				BD9E836C1B64F4630091AA73 /* AppDelegate.swift */,
 				BD9E836E1B64F4630091AA73 /* ViewController.swift */,
 				BD9E83701B64F4630091AA73 /* Main.storyboard */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					BD9E83661B64F4630091AA73 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = F7MZYMMXYS;
 					};
 					BD9E837B1B64F4630091AA73 = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,6 +199,7 @@
 				BD9E83721B64F4630091AA73 /* Main.storyboard in Resources */,
 				BD9E83771B64F4630091AA73 /* LaunchScreen.xib in Resources */,
 				BD9E83741B64F4630091AA73 /* Images.xcassets in Resources */,
+				BD9E838D1B6506F50091AA73 /* font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShotsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShotsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
