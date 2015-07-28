@@ -49,8 +49,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="imageButtonDidPress:" destination="ez2-II-kTC" eventType="touchUpInside" id="BXO-de-b8A"/>
-                                                    <segue destination="UMY-ag-csS" kind="modal" modalTransitionStyle="flipHorizontal" id="1Nm-0X-2SI"/>
+                                                    <segue destination="UMY-ag-csS" kind="modal" id="VNf-BT-VbE"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pp-TW-Lqk">
@@ -231,7 +230,6 @@
                         <outlet property="dialogueView" destination="ZrI-4a-4AU" id="UsX-gh-fZI"/>
                         <outlet property="favouritesLabel" destination="u4m-n6-9e7" id="hQA-oN-wgC"/>
                         <outlet property="headerView" destination="0Pp-TW-Lqk" id="yDc-QO-EnZ"/>
-                        <outlet property="imageButton" destination="0Jn-GM-U8E" id="X02-RN-FLx"/>
                         <outlet property="likeButton" destination="Q4e-VP-aga" id="SBn-WA-iOK"/>
                         <outlet property="popoverView" destination="OIX-9y-o48" id="ZaG-a4-70B"/>
                         <outlet property="shareButton" destination="T2T-ET-Eug" id="Qwz-og-U1N"/>
@@ -264,9 +262,6 @@
                                 <state key="normal" backgroundImage="backbutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ez2-II-kTC" kind="modal" modalTransitionStyle="flipHorizontal" id="ZB8-fH-ehP"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-ES-Ps9">
                                 <rect key="frame" x="20" y="291" width="30" height="30"/>
